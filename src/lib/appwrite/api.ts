@@ -17,10 +17,10 @@ export async function createUserAccount(user: INewUser) {
 
     const newUser = await saveUserToDB({
       accountId: newAccount.$id,
-      email: newAccount.email,
       name: newAccount.name,
-      imageUrl: avatarUrl,
+      email: newAccount.email,
       username: user.username,
+      imageUrl: avatarUrl,
     });
 
     return newUser;

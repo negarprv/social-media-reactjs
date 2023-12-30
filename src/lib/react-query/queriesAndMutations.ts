@@ -92,7 +92,6 @@ export const useLikePost = () => {
 
 export const useSavePost = () => {
   const queryClient = useQueryClient();
-
   return useMutation({
     mutationFn: ({ userId, postId }: { userId: string; postId: string }) =>
       savePost(userId, postId),
@@ -112,10 +111,8 @@ export const useSavePost = () => {
 
 export const useDeleteSavedPost = () => {
   const queryClient = useQueryClient();
-
   return useMutation({
-    mutationFn: ({ savedRecordId }: { savedRecordId: string }) =>
-      deleteSavedPost(savedRecordId),
+    mutationFn: (savedRecordId: string) => deleteSavedPost(savedRecordId),
     onSuccess: () => {
       queryClient.invalidateQueries({
         queryKey: [QUERY_KEYS.GET_RECENT_POSTS],

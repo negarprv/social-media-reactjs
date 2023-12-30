@@ -10,8 +10,6 @@ const TopCreators = () => {
     isError: isGetUserError,
   } = useGetUsers(10);
 
-  console.log(users?.documents);
-
   return (
     <div className=" topCreators">
       <h3 className=" h3-bold">Top Creators</h3>

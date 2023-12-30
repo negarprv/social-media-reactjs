@@ -14,8 +14,6 @@ function RootLayout() {
         <Outlet />
       </section>
 
-      <TopCreators />
-
       <BottomBar />
     </div>
   );

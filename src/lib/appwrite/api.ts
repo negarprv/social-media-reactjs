@@ -276,6 +276,8 @@ export async function savePost(userId: string, postId: string) {
       }
     );
 
+    console.log(updatedPost);
+
     if (!updatedPost) throw Error;
 
     return updatedPost;

@@ -226,9 +226,14 @@
     @apply rounded-lg base-medium hover:bg-primary-500 transition;
   }
 
-  /* Left sidebar */
+  /* top creators */
   .topCreators {
     @apply hidden xl:flex px-6 py-10 flex-col justify-start gap-10 min-w-[465px] bg-dark-2  h-screen overflow-y-scroll custom-scrollbar;
+  }
+
+  /* all users */
+  .allUsers {
+    @apply hidden xl:flex px-6 py-10 flex-col justify-start gap-10 w-full bg-dark-2  h-screen overflow-y-scroll custom-scrollbar;
   }
 
   /* Post Card */

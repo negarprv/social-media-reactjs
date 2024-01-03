@@ -6,7 +6,7 @@ const UserCard = ({ user }: { user: Models.Document }) => {
   const navigate = useNavigate();
 
   return (
-    <div className=" rounded-3xl border border-dark-4 w-[190px]  py-6 px-9">
+    <div className=" rounded-3xl border border-dark-4 w-[190px]   py-6 px-9">
       <div className=" flex flex-col gap-2  items-center">
         <img
           src={user ? user.imageUrl : "/assets/icons/profile-placeholder.svg"}

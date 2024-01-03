@@ -17,7 +17,7 @@ const AllUsers = () => {
       {isGetUserLoading && !users ? (
         <Loader />
       ) : (
-        <ul className="grid grid-cols-5  items-center gap-5 ">
+        <ul className="grid grid-cols-5 mt-7 items-center gap-5 max-xl:grid-cols-3 max-lg:grid-cols-2 ">
           {users?.documents.map((user: Models.Document) => (
             <UserCard key={user.$id} user={user} />
           ))}
